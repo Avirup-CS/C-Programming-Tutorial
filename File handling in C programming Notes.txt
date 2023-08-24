@@ -1,0 +1,40 @@
+//FILE *fp;//fp refer to file pointer
+fopen()
+"w"- to open a file to write data/info
+"r"- to open a file to read data/info from the beginning
+"a"- to open a file to add data/info at the end of existing file
+"w+"- to pen a file for writing. Data can be read after writing using same mode
+"r+"- to pen a file for reading and writing 
+"a+"- to open a file to write at the end. Data can be read after writing using same mode
+
+//For open
+FILE *fptr,*tfile;
+fptr=fopen("STUDENT.DAT","w");
+tfile=fopen("INFO.TXT","r");
+
+//For close
+fclose(fp)
+
+fclose(fptr);
+fclose(tfile);
+
+//Functions
+1.grtc()- to read a chartacter in a file
+
+c=getc(fp)
+
+FILE *tfile;
+char c;
+c=getc(tfile);
+
+2.putc()- to write a character to a file 
+
+putc(ch,fp)
+
+FILE *tfile;
+char c;
+putc(c,tfile);
+
+3.feof()- end of file while reading data
+
+feof(fp);
